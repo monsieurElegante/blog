@@ -1,11 +1,11 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
-import { roomsService } from "../services/RoomsService";
+import { gamesService } from "../services/GamesService";
 import auth0Provider from "@bcwdev/auth0Provider";
 
-export class RoomsController extends BaseController {
+export class GamesController extends BaseController {
   constructor() {
-    super("api/rooms");
+    super("api/games");
     this.router = express
       .Router()
       .get("", this.getAll)
@@ -15,8 +15,8 @@ export class RoomsController extends BaseController {
 
   async getAll(_, res, next) {
     try {
-      roomsService.find({});
-      return res.send(["room1", "room1"]);
+      gamesService.find({});
+      return res.send(["game1", "game1"]);
     } catch (error) {
       next(error);
     }
@@ -24,7 +24,7 @@ export class RoomsController extends BaseController {
   async getById(req, res, next) {
     try {
       return res.send({
-        room: "room" + req.params.id,
+        game: "game" + req.params.id,
         user: req.user,
         userInfo: req.userInfo
       });

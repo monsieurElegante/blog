@@ -1,2 +1,2 @@
 export const VALUE = "value";
-export const ROOM = "room";
+export const GAME = "game";

@@ -1,12 +1,12 @@
 import ValueSchema from "../models/Value";
-import RoomSchema from "../models/Room";
+import GameSchema from "../models/Game";
 import { VALUE } from "./Collections";
-import { ROOM } from "./Collections";
+import { GAME } from "./Collections";
 import mongoose from "mongoose";
 
 class DbContext {
   Values = mongoose.model(VALUE, ValueSchema);
-  Rooms = mongoose.model(ROOM, RoomSchema)
+  Games = mongoose.model(GAME, GameSchema)
 }
 
 export const dbContext = new DbContext();
