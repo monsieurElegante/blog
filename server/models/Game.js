@@ -70,7 +70,6 @@ Game.method({
 		// #region Connecting rooms
 
 		advert.addExit("continue", terminal)
-		advert.
 
 		// #endregion
 	}
