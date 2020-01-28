@@ -8,7 +8,7 @@
 ## Functionality
 - [x] Establish basic story and map
 - [ ] In game.setup(), create game entities
-	- [ ] Add rooms
+	- [X] Add rooms
 	- [ ] Add items
 	- [ ] Set currentRoom and currentPlayer
 - [ ] Room methods
