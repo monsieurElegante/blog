@@ -1,9 +1,9 @@
 # Build Outline
 
 ## Services
-- [ ] Configure Auth0
+- [X] Configure Auth0
 - [ ] Configure Heroku
-- [ ] Configure Mongoose
+- [X] Configure Mongoose
 
 ## Functionality
 - [x] Establish basic story and map
